@@ -126,7 +126,7 @@ function position(letter){
     }
 
 }
-console.log(position('a'));
+// console.log(position('a'));
 
 // -------- ------- ------- ------- ----------- -----------
 
@@ -135,8 +135,27 @@ let code;
 function getChar(code){
     return String.fromCharCode(code)
 }
-console.log(getChar(66));
+// console.log(getChar(66));
 
 // -------- ------- ------- ------- ----------- -----------
 
-10. // What if we need the length of the words separated by a space to be added at the end of that same word and have it returned as an array? Ex: "apple ban" --> ["apple 5", "ban 3"]
+10. // ?? What if we need the length of the words separated by a space to be added at the end of that same word and have it returned as an array? Ex: "apple ban" --> ["apple 5", "ban 3"]
+
+let sentence = 'Hey, what are you doing ?';
+
+function addLength(sentence) {
+    let words = sentence.split(' ');
+    words.forEach(word => {
+        word = word.split(' ');
+        let count = 0;
+        for(let letter of word){
+            console.log(letter.split(' '));
+            count++
+        }
+    })
+        
+}
+
+
+let result = addLength(sentence.words)
+// console.log(result);

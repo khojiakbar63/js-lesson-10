@@ -73,7 +73,7 @@ function extractNumber(strNum) {
     // let number = strNum.replace(/[a-zA-Z]/g,'');
     let number = strNum.match(/[0-9]/g);
     return +number.join('') // for match
-    return Number(number) // for replace
+    // return Number(number) // for replace
 }
 
 console.log(extractNumber(strNum));
