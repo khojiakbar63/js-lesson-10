@@ -46,20 +46,20 @@ If you can, try writing it in one line of code.
 Create a function that always returns True/true for every item in a given list.
 However, if an element is the word 'flick', switch to always returning the opposite boolean value.
 */
-// function flickSwitch(arr) {
-//     let toggle = true;
-//     const result = [];
-//     for (const item of arr) {
-//       if (item === 'flick') {
-//         toggle = !toggle;
-//       }
-//       result.push(toggle);
-//     }
-//     return result;
-//   }
+function flickSwitch(arr) {
+    let toggle = true;
+    const result = [];
+    for (const item of arr) {
+      if (item === 'flick') {
+        toggle = !toggle;
+      }
+      result.push(toggle);
+    }
+    return result;
+  }
   
-//   console.log(flickSwitch(['codewars', 'flick', 'code', 'wars']))
-//   console.log(flickSwitch(['bicycle', 'jarmony', 'flick', 'sheep', 'flick']))
+  console.log(flickSwitch(['codewars', 'flick', 'code', 'wars']))
+  console.log(flickSwitch(['bicycle', 'jarmony', 'flick', 'sheep', 'flick']))
 // -------- ------- ------- ------- ----------- -----------
 5. /*  ??
 If a product price is 200.00 and VAT is 15%, then the final product price (with VAT) is: 200.00 + 15% = 230.00
@@ -91,8 +91,40 @@ function removeFirstAndLast(str) {
   }
   
  
-  console.log(removeFirstAndLast("hello")); // ➞ "ell"
+//   console.log(removeFirstAndLast("hello"))
 
+// -------- ------- ------- ------- ----------- -----------
+
+7. // Create a function that accepts a string and a single character, and returns an integer of the count of occurrences the 2nd argument is found in the first one. If no occurrences can be found, a count of 0 should be returned.
+
+function strCount(str, letter){  
+    let count = 0;
+      for(let i = 0; i < str.length; i++) {
+          if(str[i] === letter) {
+              count++;
+          }
+      }
+      return count;
+  }
+
+//   console.log(strCount("hello", "l"));
 
 
 // -------- ------- ------- ------- ----------- -----------
+
+
+8. // When provided with a letter, return its position in the alphabet.
+
+let alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+
+function position(letter){
+    let letterPosition;
+    for(let i = 0; i < alphabet.length; i++){
+        if(alphabet[i] === letter){
+            letterPosition = alphabet.indexOf(letter)+1;
+            return letterPosition;
+        }
+    }
+
+}
+console.log(position('a'));
