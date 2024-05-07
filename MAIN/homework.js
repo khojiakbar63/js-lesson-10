@@ -46,20 +46,20 @@ If you can, try writing it in one line of code.
 Create a function that always returns True/true for every item in a given list.
 However, if an element is the word 'flick', switch to always returning the opposite boolean value.
 */
-function flickSwitch(arr) {
-    let toggle = true;
-    const result = [];
-    for (const item of arr) {
-      if (item === 'flick') {
-        toggle = !toggle;
-      }
-      result.push(toggle);
-    }
-    return result;
-  }
+// function flickSwitch(arr) {
+//     let toggle = true;
+//     const result = [];
+//     for (const item of arr) {
+//       if (item === 'flick') {
+//         toggle = !toggle;
+//       }
+//       result.push(toggle);
+//     }
+//     return result;
+//   }
   
-  console.log(flickSwitch(['codewars', 'flick', 'code', 'wars']))
-  console.log(flickSwitch(['bicycle', 'jarmony', 'flick', 'sheep', 'flick']))
+//   console.log(flickSwitch(['codewars', 'flick', 'code', 'wars']))
+//   console.log(flickSwitch(['bicycle', 'jarmony', 'flick', 'sheep', 'flick']))
 // -------- ------- ------- ------- ----------- -----------
 5. /*  ??
 If a product price is 200.00 and VAT is 15%, then the final product price (with VAT) is: 200.00 + 15% = 230.00
@@ -112,7 +112,6 @@ function strCount(str, letter){
 
 // -------- ------- ------- ------- ----------- -----------
 
-
 8. // When provided with a letter, return its position in the alphabet.
 
 let alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
@@ -128,3 +127,16 @@ function position(letter){
 
 }
 console.log(position('a'));
+
+// -------- ------- ------- ------- ----------- -----------
+
+9. // Write a function which takes a number and returns the corresponding ASCII char for that value.
+let code;
+function getChar(code){
+    return String.fromCharCode(code)
+}
+console.log(getChar(66));
+
+// -------- ------- ------- ------- ----------- -----------
+
+10. // What if we need the length of the words separated by a space to be added at the end of that same word and have it returned as an array? Ex: "apple ban" --> ["apple 5", "ban 3"]
