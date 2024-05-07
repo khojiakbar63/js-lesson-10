@@ -46,7 +46,53 @@ If you can, try writing it in one line of code.
 Create a function that always returns True/true for every item in a given list.
 However, if an element is the word 'flick', switch to always returning the opposite boolean value.
 */
-let arr = ['codewars', 'flick', 'code', 'wars'];
+// function flickSwitch(arr) {
+//     let toggle = true;
+//     const result = [];
+//     for (const item of arr) {
+//       if (item === 'flick') {
+//         toggle = !toggle;
+//       }
+//       result.push(toggle);
+//     }
+//     return result;
+//   }
+  
+//   console.log(flickSwitch(['codewars', 'flick', 'code', 'wars']))
+//   console.log(flickSwitch(['bicycle', 'jarmony', 'flick', 'sheep', 'flick']))
+// -------- ------- ------- ------- ----------- -----------
+5. /*  ??
+If a product price is 200.00 and VAT is 15%, then the final product price (with VAT) is: 200.00 + 15% = 230.00
+
+Thus, if your function receives 230.00 as input, it should return 200.00
+
+Notes:
+
+VAT is always 15% for the purposes of this Kata.
+Round the result to 2 decimal places.
+If null value given then return -1
+*/
+
+// function excludingVatPrice(priceIncludingVat) {
+//     if (priceIncludingVat === null) {
+//       return -1;
+//     }
+//     const priceWithoutVat = priceIncludingVat / 1.15;
+//     return Math.round(priceWithoutVat * 100) / 100;
+//   }
+
+//   console.log(excludingVatPrice(230.00)); // ➞ 200.00
+
+// -------- ------- ------- ------- ----------- -----------
+6. // It's pretty straightforward. Your goal is to create a function that removes the first and last characters of a string. You're given one parameter, the original string. You don't have to worry about strings with less than two characters.
+
+function removeFirstAndLast(str) {
+    return str.slice(1, -1);
+  }
+  
+ 
+  console.log(removeFirstAndLast("hello")); // ➞ "ell"
 
 
 
+// -------- ------- ------- ------- ----------- -----------
