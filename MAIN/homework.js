@@ -159,3 +159,4 @@ function addLength(sentence) {
 
 let result = addLength(sentence.words)
 // console.log(result);
+// 
